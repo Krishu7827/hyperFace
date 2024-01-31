@@ -1,0 +1,45 @@
+.mobile-box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+    background-color: #191B20; /* Replace with your background color */
+  }
+  
+  .text {
+    height: 32px;
+    width: 158px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+  color: white;
+  }
+  
+  .User-name{
+    background: linear-gradient(300deg, #5065DA, #556FFF, #C557AD, #E65F9A,#E66176); /* Replace with your gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  .image-container {
+    border-radius: 100%;
+  
+  }
+  
+  .profile-image {
+    border-radius: 100%;
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+  }
+  
+  .nice-day-container {
+    padding-left: 16px;
+    padding-right: 16px;
+    color:#C7C8CC;
+    background-color: #191B20;
+  }
+
+
+  
