@@ -1,36 +1,35 @@
+import React from 'react'
 import './Scroll.css'
 
 
 
 
 
-const  ScrollBar = ({header,topic,card})=>{
-
-
-
+const  ScrollBar = ({header,text,data,ind})=>{
+ 
+  
 
 
     return(
-        <div>
-         <form>
-      <input type="radio" name="fancy" autoFocus value="clubs" id="clubs" />
-      <input type="radio" name="fancy" value="hearts" id="hearts" />
-      <input type="radio" name="fancy" value="spades" id="spades" />
-      <input type="radio" name="fancy" value="diamonds" id="diamonds" />
+        <div className='Scroll-Header'>
+            <div style={{width:'30px'}}>
+          
+            </div>
+            
+            <p style={{color:"white",fontSize:'24px',fontWeight:500}} >{header}</p>
+            <p style={{color:"#B6BBC4",fontSize:'14px'}}>{text}</p>
+        <section className="container">
+     {data.map((el,ind)=>
+     <div key={ind}>
+        <div  className='card' style={{background:`linear-gradient(to left, ${el.color}, #FFD6A5)`}}>
 
-      <label htmlFor="clubs">&#9827; Clubs</label>
-      <label htmlFor="hearts">&#9829; Hearts</label>
-      <label htmlFor="spades">&#9824; Spades</label>
-      <label htmlFor="diamonds">&#9830; Diamonds</label>
-
-      {/* New JSX divs */}
-      <div className="custom-div" id="div1">Custom Div 1</div>
-      <div className="custom-div" id="div2">Custom Div 2</div>
-      <div className="custom-div" id="div3">Custom Div 3</div>
-
-      <div className="keys">Use left and right keys to navigate</div>
-    </form>
         </div>
+        <p style={{color:"white",fontSize:'17px',fontWeight:'500'}}>{el.title}</p>
+        <p style={{color:"#B6BBC4",fontSize:'14px'}}>{`${el.chapters} Chapters ${el.duration}`}</p>
+        </div>
+     )}
+      </section>
+      </div>
     )
 }
 

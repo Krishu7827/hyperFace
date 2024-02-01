@@ -6,7 +6,7 @@
     padding-bottom: 20px;
   }
   .nice-day-container>div{
-    background-color: #1F2544;
+    background-color: #272829;
     padding-left: 5px;
     padding-right: 5px;
     border-radius:3px ;
@@ -22,6 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
   }
   
   p {
@@ -31,7 +32,7 @@
   }
   
   .community-button {
-    background-color: #4caf50; /* Green color, replace with your desired color */
+    background-color: #4caf50; 
     color: #fff;
     padding: 6px 6px;
     border-radius: 5px;
